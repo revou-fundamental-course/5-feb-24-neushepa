@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konversi Suhu</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body onload='setFocusToTextBox()'>
+
+    <div id="container">
+        <div id="contain">
+            <div id="header">
+                <h1>Konversi Suhu</h1>
+                <span>
+                    <h2>Masukan suhu derajat Celcius (&deg;C) pada kotak di bawah,<br>klik tombol Konversi untuk mendapatkan hasil konversi dalam bentuk Fahrenheit (&deg;F)</h2>
+                </span>
+            </div>
+            <div id="section">
+                <div>
+                    <input type="number" name="" class="value" id="input" value="0.00">
+                    <select name="T" id="selection_1" style="width: 100%;">
+                        <option value="Celsius" selected>Derajat Celsius</option>
+                        <option value="Fahrenheit">Derajat Fahrenheit</option>
+                    </select>
+                </div>
+                <div class="large">=</div>
+                <div>
+                    <input type="number" name="" class="value" id="output" value="0.00">
+                    <select name="T" id="selection_2" style="width: 100%;">
+                        <option value="Celsius">Derajat Celsius</option>
+                        <option value="Fahrenheit" selected>Derajat Fahrenheit</option>
+                    </select>
+                </div>
+            </div>
+            <div id="button">
+                <div class="button-group">
+                    <button type="button" class="btn" id="result">Konversi</button>
+                    <button type="button" class="btn" id="reset">Reset</button>
+                </div>
+            </div>
+            <div id="formula">
+                <p id="title">Cara Kalkulasi</p>
+            </div>
+            <div id="formula">
+                <p id="howto">(0°C × 9/5) + 32 = 32.00°F</p>
+            </div>
+            <div id="error" style="display: flex; justify-content: center; margin-top: 15px;"></div>
+        </div>
+        <div id="footer" align="center">
+            Mini Project RevoU By <a href="https://github.com/neushepa" target="_blank" rel="noopener noreferrer">Rio Andrianto</a>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
